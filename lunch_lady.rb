@@ -74,8 +74,9 @@ class LunchLady
     side_dish_1_cost = @side_dish[@side_dish_choice_int_1_1 - 1][1]
     side_dish_2_sum = @side_dish[@side_dish_choice_int_2_1 - 1][0]
     side_dish_2_cost = @side_dish[@side_dish_choice_int_2_1 - 1][1]
-
-    puts "You have choosen #{main_dish_sum} with #{side_dish_1_sum} and #{side_dish_2_sum} for #{main_dish_cost + side_dish_1_cost + side_dish_2_cost}"
+    puts "Your order consists of:"
+    puts "#{main_dish_sum}, #{side_dish_1_sum}, and #{side_dish_2_sum}"
+    puts "Your order total is #{main_dish_cost + side_dish_1_cost + side_dish_2_cost}"
   end
 
 end
